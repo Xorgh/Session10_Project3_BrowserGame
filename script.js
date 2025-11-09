@@ -1,3 +1,7 @@
+let level = 1
+
+document.querySelector("#gamelevel").textContent = "Level " + level
+
 const sounds = [
   new Audio(
     "https://github.com/KasperKnop/WEB1/raw/refs/heads/main/resources/sounds/c4.mp3"
@@ -35,16 +39,10 @@ function playSound(i) {
   }
 }
 
-// Your code here
+
 const buttons = document.querySelectorAll("button");
 console.log(buttons.length);
 
-// const button1 = buttons[0];
-// button1.addEventListener("click", handleEvent)
-
-// function handleEvent() {
-//     playSound(0)
-// }
 
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", () => playSound(i));
