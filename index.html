@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>Sequence Game!</title>
+    <style>
+        body {
+            color: #485042;
+            display: flex;
+            height: 100dvh;
+            flex-direction: column;
+            margin: 0;
+            font-family: "Segoe UI";
+            background-color: #a0bcc2;
+            justify-content: center;
+            align-items: center;
+            touch-action: manipulation;
+        }
+
+        #gameboard {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 2rem;
+            background: #dfdfdf;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            margin: 1rem;
+        }
+
+        button {
+            padding: 1rem;
+            font-size: 2rem;
+            border: none;
+            border-radius: 8px;
+            background-color: #fff;
+            color: #485042;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            outline: none;
+            width: 120px;
+            height: 120px;
+        }
+
+        h1 {
+            font-size: 6rem;
+        }
+
+        p {
+            margin: 0.5rem;
+        }
+
+        #psst {
+            font-size: 1.2rem;
+            margin-top: 5rem;
+            font-style: italic;
+            text-align: center;
+        }
+
+
+        button:active,
+        .active {
+            box-shadow: none;
+            border: 2px solid #dfdfdf;
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Game On!</h1>
+    <div id="gameboard">
+        <button id="button1"></button>
+        <button id="button2"></button>
+        <button id="button3"></button>
+        <button id="button4"></button>
+        <button id="button5"></button>
+        <button id="button6"></button>
+        <button id="button7"></button>
+        <button id="button8"></button>
+        <button id="button9"></button>
+    </div>
+</body>
+
+</html>
+<script src="script.js"></script>
