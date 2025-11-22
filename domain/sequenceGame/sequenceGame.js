@@ -29,11 +29,13 @@ async function playSequence(sequenceArray) {
   for (let i = 0; i < sequenceArray.length; i++) {
     let index = sequenceArray[i];
 
-    await sleep(1000);
+    await sleep(NOTE_DELAY);
     console.log("Clicking button with index: " + index);
     clickButton(index);
+
+    await sleep(NOTE_DURATION);
   }
-  await sleep(500);
+  await sleep(SEQUENCE_END_DELAY);
   enableGameBoardButtons();
 }
 

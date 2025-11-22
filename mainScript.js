@@ -2,9 +2,12 @@ let level = 1;
 let highscore = 0;
 let currentSequence = [];
 let playerSequence = [];
-let testSequence = [8, 7, 6, 5, 4, 3, 2, 1, 0];
+const testSequence = [2, 2, 2, 2, 2, 2, 2, 4, 0, 1, 2];
 let currentIndex = 0;
 let shouldShowHints = false;
+const NOTE_DELAY = 1000;      // Delay before each note (ms)
+const NOTE_DURATION = 300;     // How long each note plays before next (ms)
+const SEQUENCE_END_DELAY = 500;
 
 setupButtons();
 disableGameBoardButtons();

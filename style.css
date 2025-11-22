@@ -8,7 +8,6 @@
      background-color: #a0bcc2;
      justify-content: center;
      align-items: center;
-     touch-action: manipulation;
      padding: 1rem;
      box-sizing: border-box;
  }
@@ -77,7 +76,8 @@
      display: none;
  }
 
- #gameboard button:active.disabled {
+ #gameboard button:active.disabled,
+ #buttonContainer button:active.disabled {
      background-color: rgba(255, 0, 0, 0.2);
  }
 
