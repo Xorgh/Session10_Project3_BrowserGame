@@ -2,13 +2,26 @@
 
 <head>
     <title>Sequence Game!</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="presentation/presentationScript.js" defer></script>
+    <script src="persistence/persistenceScript.js" defer></script>
+    <script src="domain/sequenceGame/sequenceGame.js" defer></script>
+    <script src="mainScript.js" defer></script>
 </head>
 
 <body>
-    <h1>Game On!</h1>
+    <h1>Sequence Game!</h1>
+    <p id="description">Welcome to my sequence game. Press 'Begin' when ready. Wait for the sequence to finish then
+        repeat it. Enjoy</p>
+    <h2 id="highscore"></h2>
     <h2 id="gamelevel"></h2>
+    <div id="buttonContainer">
+        <button id="startButton">Begin</button>
+        <button id="hintsButton">Enable Hints</button>
+        <button id="resetHighscoreButton">Reset Highscore</button>
+        <button id="testButton">Sound Test</button>
+    </div>
     <div id="gameboard">
         <button id="button1"></button>
         <button id="button2"></button>
@@ -20,5 +33,6 @@
         <button id="button8"></button>
         <button id="button9"></button>
     </div>
+    <p id="hintsoutput"></p>
 </body>
 </html>

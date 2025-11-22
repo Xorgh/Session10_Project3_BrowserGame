@@ -1,62 +1,94 @@
  body {
-            color: #485042;
-            display: flex;
-            height: 100dvh;
-            flex-direction: column;
-            margin: 0;
-            font-family: "Segoe UI";
-            background-color: #a0bcc2;
-            justify-content: center;
-            align-items: center;
-            touch-action: manipulation;
-        }
+     color: #485042;
+     display: flex;
+     height: 100dvh;
+     flex-direction: column;
+     margin: 0;
+     font-family: "Segoe UI";
+     background-color: #a0bcc2;
+     justify-content: center;
+     align-items: center;
+     touch-action: manipulation;
+     padding: 1rem;
+     box-sizing: border-box;
+ }
 
-        #gameboard {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 2rem;
-            background: #dfdfdf;
-            border-radius: 1rem;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            margin: 1rem;
-        }
+ #gameboard,
+ #buttonContainer {
+     display: flex;
+     align-items: center;
+     gap: 0.75rem;
+     padding: 1.5rem;
+     background: #dfdfdf;
+     border-radius: 1rem;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+     margin: 0.5rem;
+     flex-wrap: wrap;
+     justify-content: center;
+     max-width: 800px;
+     width: 100%;
+     box-sizing: border-box;
+ }
 
-        button {
-            padding: 1rem;
-            font-size: 2rem;
-            border: none;
-            border-radius: 8px;
-            background-color: #fff;
-            color: #485042;
-            cursor: pointer;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            outline: none;
-            width: 120px;
-            height: 120px;
-        }
+ button {
+     padding: 1rem;
+     font-size: 1.5rem;
+     border: none;
+     border-radius: 8px;
+     background-color: #fff;
+     color: #485042;
+     cursor: pointer;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+     outline: none;
+ }
 
-        h1 {
-            font-size: 6rem;
-        }
-        h2 {
-            font-size: 3rem;
-            margin-bottom: 5rem;
-            font-style: italic;
-            text-align: center;
-        }
-        
-        p {
-            margin: 0.5rem;
-        }
+ #gameboard button {
+     width: 70px;
+     height: 70px;
+     box-shadow: 0 4px 10px rgba(0, 187, 28, 0.2);
+ }
 
+ #startButton {
+     box-shadow: 0 4px 10px rgba(0, 143, 24, 0.9);
+ }
 
+ h1 {
+     font-size: 4rem;
+ }
 
+ h2 {
+     font-size: 3rem;
+     margin-bottom: 5rem;
+     font-style: italic;
+     text-align: center;
+ }
 
-        button:active,
-        .active {
-            box-shadow: none;
-            border: 2px solid #dfdfdf;
-            background-color: #007BFF;
-            color: white;
-        }
+ p {
+     margin: 0.5rem;
+ }
+
+ #hintsoutput {
+    min-height: 2rem;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+ .hide {
+     display: none;
+ }
+
+ #gameboard button:active.disabled {
+     background-color: rgba(255, 0, 0, 0.2);
+ }
+
+ button:active,
+ .active {
+     box-shadow: 0 4px 10px rgba(0, 143, 24, 0.9);
+     background-color: #007BFF;
+     color: white;
+ }
+
+ #gameboard button:disabled,
+ #buttonContainer button:disabled {
+     box-shadow: 0 4px 10px rgba(255, 0, 0, 0.9);
+ }

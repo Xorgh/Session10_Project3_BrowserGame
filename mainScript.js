@@ -1,6 +1,13 @@
-let level = 1
+let level = 1;
+let highscore = 0;
+let currentSequence = [];
+let playerSequence = [];
+let testSequence = [8, 7, 6, 5, 4, 3, 2, 1, 0];
+let currentIndex = 0;
+let shouldShowHints = false;
 
-document.querySelector("#gamelevel").textContent = "Level " + level
+setupButtons();
+disableGameBoardButtons();
 
 const sounds = [
   new Audio(
@@ -32,34 +39,5 @@ const sounds = [
   ),
 ];
 
-function playSound(i) {
-  if (sounds[i]) {
-    sounds[i].currentTime = 0;
-    sounds[i].play();
-  }
-}
-
-
-const buttons = document.querySelectorAll("button");
-console.log(buttons.length);
-
-
-for (let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", () => playSound(i));
-}
-
-document.addEventListener("keypress", function (e) {
-  if (e.key > 0 && e.key < 10) {
-    const index = e.key - 1;
-
-    buttons[index].click();
-
-    buttons[index].classList.add("active");
-    buttons[index].focus();
-
-    setTimeout(() => {
-      buttons[index].classList.remove("active");
-      buttons[index].blur();
-    }, 150);
-  }
-});
+initialHighscoreCheck();
+displayHighscore();
