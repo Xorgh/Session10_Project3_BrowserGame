@@ -146,7 +146,7 @@ function enableMenuButtons() {
 
 function displayGameOver() {
   alert(
-    "Game over! You reached level " +
+    "Game over! You failed to beat level " +
       level +
       ". Your highscore is " +
       highscore +
