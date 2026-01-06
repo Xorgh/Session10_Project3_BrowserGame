@@ -4,7 +4,7 @@
 <!-- TODO 3. Record the players buttons pushes. -->
 <!-- TODO 4. Compare to generated list. -->
 <!-- TODO 5. Next level & Game Over. -->
-<!-- TODO 6. Brug localStorage -->
+<!-- TODO 6. Use localStorage -->
 
 
 Game flow:

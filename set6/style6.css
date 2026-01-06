@@ -1,0 +1,12 @@
+
+body {
+    background: #a0bcc2;
+}
+
+.container {
+    gap: 1rem;
+}
+
+.card {
+    background: wheat;
+}

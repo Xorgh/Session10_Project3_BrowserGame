@@ -1,5 +1,3 @@
-// Setting up buttons
-
 const startButton = document.querySelector("#startButton");
 const testButton = document.querySelector("#testButton");
 const resetHighsButton = document.querySelector("#resetHighscoreButton");
